@@ -12,13 +12,13 @@ AffectNet database, obtained with permission from Ali Mollahosseini, Behzad Hasa
 - Fear = 6,398 images
 - Neutral = randomly split from sample into 6,398 images 
 
-<h1>Classifier</h1>
+<h2>Classifier</h2>
 PyTorch simple CNN, architecture: 
 
 conv2d + relu + conv2d + relu + avg_pool + conv2d + relu + avg_pool + conv2d + relu + FC 
 
-<h1>Evaluation</h1>
+<h2>Evaluation</h2>
 
-<h1>Mean expression calculations</h1>
+<h2>Mean expression calculations</h2>
 
-<h1>Demo FMV</h1>
+<h2>Demo FMV</h2>
