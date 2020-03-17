@@ -33,8 +33,7 @@ CNN in Pytorch:
 <h3>Evaluation</h3>
 The current model is 71% on validation, 78% on test.
 
-<img src="/results/fear_classifier.gif">
-
+<img src="results/screenshot.png">
 <h3>Demo FMV</h3>
 <a href="https://vimeo.com/397697090">https://vimeo.com/397697090</a>
 
@@ -42,6 +41,11 @@ The current model is 71% on validation, 78% on test.
 <h2>Data Classification</h2>
 - Combination of Fear and Surprise = 20,468 images (Expression == 4 + Expression ==3)
 - Neutral = randomly split from sample into 20,468 images (Expression == 0)
+
+<h2>Mean expression calculations</h2>
+Takes the mean value of the fear probability for all faces on the given frame, saves to outfile.
+<img src="results/fear_timeseries.png">
+
 
 <h3>Classifier</h3>
 ResNet-18, from TorchVision, pretrained=True
@@ -104,5 +108,5 @@ data transforms:
 Training complete in 19m 51s<br>
 Best val Acc: 0.863500
 
-<h2>Mean expression calculations</h2>
-Takes the mean value of the fear probability for all faces on the given frame, saves to outfile.
+<img src="results/test.png">
+
