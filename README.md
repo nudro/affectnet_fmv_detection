@@ -33,7 +33,7 @@ CNN in Pytorch:
 <h3>Evaluation</h3>
 The current model is 71% on validation, 78% on test.
 
-<img src="/results/fearclassifier.gif">
+<img src="/results/fear_classifier.gif">
 
 <h3>Demo FMV</h3>
 <a href="https://vimeo.com/397697090">https://vimeo.com/397697090</a>
