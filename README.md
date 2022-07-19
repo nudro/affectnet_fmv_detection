@@ -1,8 +1,8 @@
 # fearclassifier
 Crowd fear classifier on FMV
 
-#Introduction 
-Development of a prototype for collective fear detection on YouTube videos. 
+#Introduction
+Development of a very simple prototype for collective fear detection on YouTube videos. Uses the basic OpenCV haarcascade, a simple CNN, and was trained on data from the AffectNet database. The pre-trained model is available <a href="https://umbc.box.com/s/fty8xtwbjyui5maxwwtaubz7x8u03thh">here.</a>
 
 #Data
 AffectNet database, obtained with permission from Ali Mollahosseini, Behzad Hasani, and Mohammad H. Mahoor, “AffectNet: A New Database for Facial Expression, Valence, and Arousal Computation in the Wild”, IEEE Transactions on Affective Computing, 2017. URL - http://mohammadmahoor.com/affectnet/
@@ -65,9 +65,9 @@ data transforms:
         transforms.CenterCrop(224),
         transforms.ToTensor(),
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
-  
+
   loss and optimizer:
-  
+
     criterion = nn.CrossEntropyLoss()
 
     optimizer_ft = optim.SGD(model_ft.parameters(), lr=0.001, momentum=0.9)
@@ -76,11 +76,11 @@ data transforms:
     exp_lr_scheduler = lr_scheduler.StepLR(optimizer_ft, step_size=7, gamma=0.1)
     ]),
     }
-    
+
   trained 5 epochs
 
 <h3>Evaluation</h3>
-    
+
     Epoch 0/4
     -----
     train Loss: 0.3904 Acc: 0.8203
@@ -110,4 +110,3 @@ Training complete in 19m 51s<br>
 Best val Acc: 0.863500
 
 <img src="results/test.png">
-
